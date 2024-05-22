@@ -1,0 +1,142 @@
+
+
+
+.navbar{
+    
+
+}
+
+.about{
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.card-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:grey;
+}
+
+.strenth{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.strenth > div{
+    margin: 2rem 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.s-pic{
+    max-width: 10rem;
+    margin-top: 2rem;
+}
+
+.divide-line{
+    width: 5rem;
+    height: 2px;
+    background-color: aqua;
+}
+
+.our-tech{
+
+}
+
+.list-group{
+    border-radius: ;
+}
+
+.list-group-item {
+    border: none;
+}
+
+
+.techcard{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+    
+.row{
+    background-color: rgba(48, 193, 202, 0.06);
+    min-height: 10rem;
+    
+
+}
+
+/* .col-left{
+    border-right: 0.2rem solid #30C1CA;
+} */
+
+.subrow{
+    display: flex;
+
+
+}
+
+.row1 > .col-left{
+    background-color: rgba(48, 193, 202, 0.3);
+}
+
+.subrow{
+    padding: 0;
+}
+
+.subrow > .col-left{
+    background-color: rgba(48, 193, 202, 0.6);
+}
+
+.row3 > .col-left{
+    background-color: rgba(48, 193, 202, 0.9);
+}
+
+.row4 > .col-left{
+    background-color: rgba(35, 154, 162, 0.9);
+}
+
+.row5 > .col-left{
+    background-color: rgba(23, 102, 107, 0.9);
+}
+
+.subrow > .col-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.row > .col-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+.progressImg{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+img{
+    width:100%;
+}
+
+.img5{
+    width: 60%;
+}
+
+.phrase{
+    padding: 5px 0;
+}
