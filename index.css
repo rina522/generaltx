@@ -1,9 +1,5 @@
-
-
-
-.navbar{
-    
-
+*{
+    box-sizing: border-box;
 }
 
 .about{
@@ -20,14 +16,14 @@
     color:grey;
 }
 
-.strenth{
+.strength{
     margin: 3rem 0;
     display: grid;
     grid-template-columns: auto auto auto;
     
 }
 
-.strenth > div{
+.strength > div{
     margin: 2rem 0;
     padding: 10px;
     display: flex;
@@ -42,101 +38,208 @@
     margin-top: 2rem;
 }
 
-.divide-line{
-    width: 5rem;
-    height: 2px;
-    background-color: aqua;
+.progress-title{
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
-.our-tech{
-
+.progress-container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-auto-rows: repeat(4, 1fr); /* 4 rows */
+    gap: 0; /* Gap between grid items */
 }
 
-.list-group{
-    border-radius: ;
-}
-
-.list-group-item {
-    border: none;
-}
-
-
-.techcard{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+.grid-item {
+    background-color: #fff;
+    height: 20rem;
+    padding: 3rem;
     text-align: center;
+    position: relative;
+    /* background-color: #CAF0F8; */
 }
-    
-.row{
-    background-color: rgba(48, 193, 202, 0.06);
-    min-height: 10rem;
-    
+
+
+.grid-1-2, .grid-1-3{
+    border-top: #CAF0F8 solid 3px;
+}
+
+
+.grid-1-4{
+    border-top: #CAF0F8 solid 3px;
 
 }
 
-/* .col-left{
-    border-right: 0.2rem solid #30C1CA;
+.grid-1-5{
+    position: relative;
+    border-top: #CAF0F8 solid 3px;
+    border-top-right-radius: 80px;
+    border-right: #CAF0F8 solid 3px;
+    border-bottom-right-radius: 80px;
+    border-bottom: #CAF0F8 solid 3px;
+}
+
+.grid-1-5::after{
+    content: " ";
+    position: absolute;
+    left:0;
+    bottom:-3%;
+    width: 12px;
+    height: 12px;
+    background-color: #48CAE4;
+    rotate: 45deg;
+    z-index: 1;
+    /* transition: 2s; */
+}
+
+/* .grid-2-5::after:hover{
+    transform: rotate(180deg);
 } */
 
-.subrow{
-    display: flex;
-
-
+.grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4{
+    border-top: #90E0EF solid 3px;
 }
 
-.row1 > .col-left{
-    background-color: rgba(48, 193, 202, 0.3);
+.grid-2-1{
+    border-top: #90E0EF solid 3px;
+    border-top-left-radius: 80px;
+    border-left: #90E0EF solid 3px;
+    border-bottom-right-radius: 80px;
+    border-bottom: #90E0EF solid 3px;
+    border-bottom-left-radius: 80px;
 }
 
-.subrow{
-    padding: 0;
+.grid-3-2{
+    border-top: #48CAE4 solid 3px;
 }
 
-.subrow > .col-left{
-    background-color: rgba(48, 193, 202, 0.6);
+.grid-3-3, .grid-3-4{
+    border-top: #48CAE4 solid 3px;
+    border-bottom: #48CAE4 solid 3px;
+    /* background-color: #90E0EF; */
 }
 
-.row3 > .col-left{
-    background-color: rgba(48, 193, 202, 0.9);
+.grid-3-5{
+    border-top: #48CAE4 solid 3px;
+    border-top-right-radius: 80px;
+    border-right: #48CAE4 solid 3px;
+    border-bottom-right-radius: 80px;
+    border-bottom: #48CAE4 solid 3px;
 }
 
-.row4 > .col-left{
-    background-color: rgba(35, 154, 162, 0.9);
+/* .grid-2-1, .grid-2-2, .grid-2-3, .grid-4-1, .grid-4-4, .grid-5-3, .grid-3-4{
+    position: relative;
+} */
+.grid-1-2::after{
+    content: "iLDC Lipid Libraries";
+    position: absolute;
+    top: -13%;
+    left:50%;
+    min-width: 60%;
+    font-size: small;
+    text-align: left;
 }
 
-.row5 > .col-left{
-    background-color: rgba(23, 102, 107, 0.9);
+.grid-1-5::before{
+    content:"Feasibility Chemical Synthesis";
+    font-size: small;
+    position: absolute;
+    left:10%;
+}
+.grid-2-4::after{
+    content: "Feasibility LNP Formulation";
+    position: absolute;
+    top: -10%;
+    right: 10%;
+    width:80%;
+    font-size: small;
 }
 
-.subrow > .col-right{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+.grid-3-2::after{
+    content: "Effective& Enhanced mRNA Expression";
+    position: absolute;
+    top: 2%;
+    font-size: small;
+    z-index: 1;
 }
 
-.row > .col-right{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+.grid-3-5::after{
+    content: "Safer Anti-inflammatory, Minimal adverse effects";
+    position: absolute;
+    right: 0;
+    top:25%;
+    font-size: small;
+    z-index: 1;
 }
 
 
+.grid-4-3::after{
+    content: "Commercial Top-class Vaccines";
+    position: absolute;
+    left: -15%;
+    top:25%;
+    font-size: small;
+    z-index: 1;
+}
 
-.progressImg{
-    display: flex;
-    flex-direction: column;
+
+.discovery, .latePre1, .latePre2, .earlyPre,.products{
+    position: absolute;
+    top:-20%;
+    width:auto;
+    max-height: 40%;
+    z-index: 1;
+}
+
+.products{
+    left: 0%;
+}
+
+button{
+    position: absolute;
+    width:2.5rem;
+    height: 2.5em;
+    border-radius: 50%;
+    border:none;
+    background-color: rgba(114, 9, 183, 0.1);
+    overflow: hidden;
+}
+
+
+.flowPic1{
+    top:-1.25rem;
+    left:-15%;
+}
+    
+button img{
+    width: 100%;
+    text-align: center;
     
 }
 
-img{
-    width:100%;
+.flowPic2{
+    top:40%;
+    left: -1.25em;;
 }
 
-.img5{
-    width: 60%;
+.flowPic3{
+    top:-1.25rem;
+    right:60%;
+    z-index: 1;
 }
 
-.phrase{
-    padding: 5px 0;
+.flowPic4{
+    top:-1.25rem;
+    right:-20%;
+    z-index: 1;
+}
+
+.flowPic5{
+    bottom: 30%;
+    right:-1.25rem;
+    z-index: 1;
 }

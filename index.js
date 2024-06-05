@@ -12,4 +12,10 @@ const s_list = list.map(item => `<div class="list border-end" id=${item.id}>
                                     <img class="s-pic" src=${item.img}>
                                 </div>`).join('')
 
-document.querySelector(".strenth").innerHTML = s_list
+// document.querySelector(".strength").innerHTML = s_list
+
+function onMouse (e){
+    e.addClass("anplify")
+
+}
+
