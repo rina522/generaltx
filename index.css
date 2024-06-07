@@ -96,6 +96,10 @@
     /* transition: 2s; */
 }
 
+/* .grid-2-5::after:hover{
+    transform: rotate(180deg);
+} */
+
 .grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4{
     border-top: #90E0EF solid 3px;
 }
@@ -104,9 +108,9 @@
     border-top: #90E0EF solid 3px;
     border-top-left-radius: 80px;
     border-left: #90E0EF solid 3px;
+    border-bottom-right-radius: 80px;
     border-bottom: #90E0EF solid 3px;
     border-bottom-left-radius: 80px;
-    background-color: #90E0EF;
 }
 
 .grid-3-2{
@@ -116,6 +120,7 @@
 .grid-3-3, .grid-3-4{
     border-top: #48CAE4 solid 3px;
     border-bottom: #48CAE4 solid 3px;
+    /* background-color: #90E0EF; */
 }
 
 .grid-3-5{
@@ -126,6 +131,9 @@
     border-bottom: #48CAE4 solid 3px;
 }
 
+/* .grid-2-1, .grid-2-2, .grid-2-3, .grid-4-1, .grid-4-4, .grid-5-3, .grid-3-4{
+    position: relative;
+} */
 .grid-1-2::after{
     content: "iLDC Lipid Libraries";
     position: absolute;

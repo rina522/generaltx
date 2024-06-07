@@ -13,3 +13,8 @@ const s_list = list.map(item => `<div class="list border-end" id=${item.id}>
                                 </div>`).join('')
 
 document.querySelector(".strength").innerHTML = s_list
+
+function onMouse (e){
+    e.addClass("anplify")
+
+}
