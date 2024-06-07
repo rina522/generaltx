@@ -12,3 +12,4 @@ const s_list = list.map(item => `<div class="list border-end" id=${item.id}>
                                     <img class="s-pic" src=${item.img}>
                                 </div>`).join('')
 
+document.querySelector(".strength").innerHTML = s_list
